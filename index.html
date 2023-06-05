@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form action="/upload/user-details" method="post">
+
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Coding" />
+
+        <br />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Ninjas" />
+
+
+        <br />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="a@a.com" required />
+
+        <br />
+
+        <label for="phoneNo">Phone Number</label>
+        <input type="number" name="phonenumber" id="phoneNo" placeholder="Enter your phone no."  />
+
+        <br />
+
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter your address"></textarea>
+
+        <br />
+
+        <label for="">DOB</label>
+        <input type="date" name="dob" id="dob" />
+
+        <br />
+
+        <label for="profilePic">Profile Pic</label>
+        <input type="file" name="profilePic" id="profilePic" accept="image/png, image/jpeg" />
+
+        <br />
+
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br />
+
+        <select name="category" id="category">
+            <option value="general">General</option>
+            <option value="obc">OBC</option>
+            <option value="sc">Sc</option>
+            <option value="st">St</option>
+        </select>
+
+        <br />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+
+        <br />
+
+        <label for="confirmPassword">ConfirmPassword</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" required />
+
+        <br />
+
+        <input type="reset" />
+
+        <br />
+
+        <input type="submit" value="SignUp" />
+    </form>
+</body>
+</html>
